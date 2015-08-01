@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:text="Capstone: My Own App"
         android:id="@+id/capstone"
-        android:layout_below="@+id/buidb"
+        android:layout_below="@+id/buildb"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:background="#c80d0e"
