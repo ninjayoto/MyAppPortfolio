@@ -20,7 +20,8 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:background="#c85a1a" />
+        android:background="#c85a1a"
+        android:textSize="20dp" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,7 +30,8 @@
         android:layout_below="@+id/popmov_1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:background="#c85a1a" />
+        android:background="#c85a1a"
+        android:textSize="20dp" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,16 +40,18 @@
         android:layout_below="@+id/popmov_2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:background="#c85a1a" />
+        android:background="#c85a1a"
+        android:textSize="20dp" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Build it Bigger"
-        android:id="@+id/buidb"
+        android:id="@+id/buildb"
         android:layout_below="@+id/super_duo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:background="#FFC85A1A" />
+        android:background="#FFC85A1A"
+        android:textSize="20dp" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,6 +60,7 @@
         android:layout_below="@+id/buidb"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:background="#c80d0e" />
+        android:background="#c80d0e"
+        android:textSize="20dp" />
 
 </RelativeLayout>

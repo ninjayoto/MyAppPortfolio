@@ -1,20 +1,66 @@
 package com.ninja.android.myappportfolio;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Context;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    Button btPopMov1, btPopMov2, btSuperDuo, btBuildB, btCapstone;
+    CharSequence toastText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        btPopMov1 = (Button) findViewById(R.id.popmov_1);
+        btPopMov2 = (Button) findViewById(R.id.popmov_2);
+        btSuperDuo = (Button) findViewById(R.id.super_duo);
+        btBuildB = (Button) findViewById(R.id.buildb);
+        btCapstone = (Button) findViewById(R.id.capstone);
+
+        btPopMov1.setOnClickListener(app);
+        btPopMov2.setOnClickListener(app);
+        btSuperDuo.setOnClickListener(app);
+        btBuildB.setOnClickListener(app);
+        btCapstone.setOnClickListener(app);
+
     }
 
-    @Override
+
+
+
+    View.OnClickListener app = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+            switch (v.getId()) {
+                case R.id.popmov_1:
+                toastText = "This button will launch Popular Movies 1 App";
+                    break;
+
+                case R.id.popmov_2:
+                toastText = "This button will launch Popular Movies 2 App";
+                    break;
+
+
+
+        }
+
+        }
+        Context context = getApplicationContext();
+        CharSequence text  = toastText;
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -35,4 +81,5 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+};
 }
